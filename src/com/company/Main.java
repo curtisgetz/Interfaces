@@ -15,8 +15,9 @@ public class Main {
         curtis.setmWeapon("Gun");
         System.out.println(curtis.toString());
 
-        Monster grey = new Monster("Grey", 200);
+        ISaveable grey = new Monster("Grey", 200);
         //saveObject(curtis);
+        System.out.println("Health is " +  ((Monster) grey).getmHealth());
         loadObject(grey);
         System.out.println(grey.toString());
 
